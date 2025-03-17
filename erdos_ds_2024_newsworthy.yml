@@ -1,0 +1,47 @@
+name: erdos_ds_2024_newsworthy
+channels:
+  - conda-forge
+dependencies:
+  - _py-xgboost-mutex
+  - absl-py=0.10.0
+  - jupyter
+  - jupyter-lsp
+  - matplotlib
+  - matplotlib-base
+  - matplotlib-inline
+  - numpy=1.21.0
+  - openpyxl
+  - pandas
+  - pip
+  - pyarrow 
+  - py-xgboost
+  - python
+  - python-dateutil
+  - python-fastjsonschema
+  - python-flatbuffers
+  - python-json-logger=
+  - python-tzdata
+  - scikit-learn
+  - seaborn
+  - seaborn-base
+  - sqlalchemy
+  - tensorflow-base
+  - tensorflow-estimator
+  - xgboost
+  - pmdarima
+  - pip:
+      - cinemagoer
+      - lxml
+      - pynytimes
+      - textblob
+      - vaderSentiment
+      - aiohttp
+      - nest_asyncio
+      - plotly
+      - keras
+      - tensorflow==2.6.0
+      - clang==5.0.0
+      - keras==2.6.0
+      - lightgbm
+
+
