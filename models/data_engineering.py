@@ -1,8 +1,9 @@
 import pandas as pd
 import datetime
 
+
 # Determines if the sentiment of an article is positive, negative, or neutral
-def _overall_sentiment(x:int):
+def _overall_sentiment(x: int):
     threshold = .1
     if x > threshold:
         return 'pos'
@@ -10,8 +11,9 @@ def _overall_sentiment(x:int):
         return 'neg'
     else:
         return 'neu'
-      
-# Reads from the complete.csv file and returns a dictionary of dataframes where the keys are the tickers
+
+# Reads from the complete.csv file and returns a dictionary of dataframes 
+# where the keys are the tickers
 def separate_by_stock(use_roberta=False):
     if use_roberta:
         df = pd.read_csv('../data/complete_next_open_frob_best.csv')
@@ -79,4 +81,3 @@ def get_cv_splits(df):
         test_idx = df.loc[(df.index >= dates[i]) & (df.index < dates[i+1])].index
         splits.append((train_idx, test_idx))
     return splits
-
